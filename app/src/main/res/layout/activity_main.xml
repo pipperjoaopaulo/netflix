@@ -12,11 +12,13 @@
         android:id="@+id/onepieceposter"
         android:layout_width="411dp"
         android:layout_height="409dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/onepiece"
         app:layout_constraintBottom_toBottomOf="@+id/assistir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/logo"
@@ -26,7 +28,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/detalhe"
@@ -40,7 +43,8 @@
         app:icon="@drawable/infocirclesvgrepocom"
         app:iconGravity="textTop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/liveaction" />
+        app:layout_constraintTop_toBottomOf="@+id/liveaction"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/assistir"
@@ -56,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toEndOf="@+id/botaolista"
         app:layout_constraintTop_toBottomOf="@+id/acao"
-        tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+        tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck,HardcodedText" />
 
     <TextView
         android:id="@+id/lista"
@@ -68,7 +72,8 @@
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"/>
 
     <ImageView
         android:id="@+id/titulofilme"
@@ -78,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription=""
+        tools:ignore="ContentDescription"
         app:srcCompat="@drawable/onepiecelogo" />
 
     <Button
@@ -95,7 +100,8 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aventura"
-        tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        tools:ignore="TextSizeCheck,HardcodedText" />
 
     <TextView
         android:id="@+id/lancamento"
@@ -107,31 +113,34 @@
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botaolista" />
+        app:layout_constraintTop_toBottomOf="@id/botaolista"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/liveaction"
         android:layout_width="86dp"
         android:layout_height="26dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="44dp"
         android:text="Live-Action"
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulofilme" />
+        app:layout_constraintTop_toBottomOf="@+id/titulofilme"
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/aventura"
         android:layout_width="72dp"
         android:layout_height="25dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
         android:text="Aventura"
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulofilme" />
+        app:layout_constraintTop_toBottomOf="@+id/titulofilme"
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/series"
@@ -145,21 +154,23 @@
         app:layout_constraintEnd_toStartOf="@+id/filme"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toEndOf="@+id/logo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/acao"
-        android:layout_width="60dp"
-        android:layout_height="28dp"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:text="Ação"
         android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toStartOf="@+id/liveaction"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toEndOf="@+id/aventura"
-        app:layout_constraintTop_toBottomOf="@+id/titulofilme" />
+        app:layout_constraintTop_toBottomOf="@+id/titulofilme"
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/filme"
@@ -173,7 +184,8 @@
         app:layout_constraintBottom_toTopOf="@+id/titulofilme"
         app:layout_constraintEnd_toStartOf="@+id/lista"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -208,15 +220,15 @@
     <ImageView
         android:id="@+id/strangerthings"
         android:layout_width="104dp"
-        android:layout_height="59dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         app:layout_constraintBottom_toBottomOf="@+id/demolidor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lancamento"
-        android:contentDescription=""
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/strangerthings" />
+        app:srcCompat="@drawable/strangerthings"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/demolidor"
@@ -230,17 +242,19 @@
         app:layout_constraintStart_toEndOf="@+id/strangerthings"
         app:layout_constraintTop_toBottomOf="@+id/assistir"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/demolidor" />
+        app:srcCompat="@drawable/demolidor"
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/scream"
-        android:layout_width="104dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="113dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detalhe"
-        app:srcCompat="@drawable/scream" />
+        app:srcCompat="@drawable/scream"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
